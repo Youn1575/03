@@ -5,17 +5,11 @@
 
 int main(int argc, char *argv[]) {
 	char c;
-	int i;
 	
-	printf("input a number :");
-	scanf("%c", &c);
+	printf("input a character :");
+	scanf("%c", &c); //%c를 형식지정자로 받아 c에 저장한다.
 	
-	i = c - '0'; //실제 아스키코드를 빼서 구 함 
-	printf("The input number is %i \n", c);		
-	printf("The input number is %i \n", i);	
+	printf("the next character of %c (%d) is %c (%d)) \n", c, c, c+1, c+1);
 	
-		
 	return 0;
 }
-
-
