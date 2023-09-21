@@ -3,13 +3,20 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-int main(int argc, char *argv[]) {
-	char c;
-	
-	printf("input a character :");
-	scanf("%c", &c); //%c를 형식지정자로 받아 c에 저장한다.
-	
-	printf("the next character of %c (%d) is %c (%d)) \n", c, c, c+1, c+1);
-	
+int main(int argc, char* argv[]) {
+	int a, b;
+	float x, y;
+
+	printf("분자를 입력하세요: ");
+	scanf("%d", &a);
+	x = a;
+
+	printf("분모를 입력하세요: ");
+	scanf("%d", &b);
+	y = b;
+
+	(float)printf("나누기의 결과는 %7.6f 입니다: ", x/y);
+
 	return 0;
 }
+
