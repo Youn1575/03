@@ -14,6 +14,7 @@ int main(int argc, char *argv[]) {
 	printf("The input number is %i \n", c);		
 	printf("The input number is %i \n", i);	
 	
+		
 	return 0;
 }
 
