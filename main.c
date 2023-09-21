@@ -4,16 +4,17 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char *argv[]) {
+	char c;
+	int i;
 	
-	int input_int;
-	float input_float;
+	printf("input a number :");
+	scanf("%c", &c);
 	
-	printf("enter an integer: ");
-	scanf("%d", &input_int);
+	i = c - '0'; //실제 아스키코드를 빼서 구 함 
+	printf("The input number is %i \n", c);		
+	printf("The input number is %i \n", i);	
 	
-	printf("enter a float: ");
-	scanf("%f", &input_float);
-	
-	printf("integer : %d, float : %f\n", input_int, input_float);
 	return 0;
 }
+
+
